@@ -1,17 +1,23 @@
 # Escreva uma função que receba itens (números) em um dicionário como entrada e retorne a chave com o maior valor.
 
+dicionario = {}
+
+def m_chave():
+    while True:
+        chave = input('Digite uma chave (digite "fim"): ')
+        if chave == '' or chave == 'fim':
+            break
+        valor = int(input('Digite um número para a chave: '))
+        dicionario[chave] = valor
 
 
-def chave_maior_valor(dicionario):
-    chave_max = None
-    valor_max = float('-inf') # inicializa com um valor muito baixo
+    srfantastico = None
+    sus = 0
+         
     for chave, valor in dicionario.items():
-        if valor > valor_max:
-            chave_max = chave
-            valor_max = valor
-    return chave_max
+        if valor > sus:
+            srfantastico = chave
+            sus = valor
+    print(srfantastico)
 
-dicionario = {'a': 10, 'b': 5, 'c': 20}
-chave = chave_maior_valor(dicionario)
-print(chave) # imprime 'c'
-
+m_chave()
