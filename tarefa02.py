@@ -13,6 +13,6 @@ def m_chave():
     for nome, maior in dicionario.items():
         if maior['idade'] >= 18:
             maior_18 = maior['idade']
-            print(f'Nome: {nome}\nIdade:{maior_18}\n')
+            print(f'Nome: {nome}\nIdade: {maior_18} anos\n')
 
 m_chave()
