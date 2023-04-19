@@ -1,5 +1,4 @@
-# Escreva uma função que receba duas listas de mesmo comprimento, uma contendo chaves e outra contendo valores
-# Retorna um dicionário criado a partir dessas listas.
+# Escreva uma função que receba um dicionário como entrada e retorna duas listas. Uma com chave e outra com valor.
 
 dicionario = {}
 
@@ -13,8 +12,10 @@ def criar_dicionario():
             break
         dicionario[chave] = valor
         
-    print(f'As chaves são: {chave}')
-    print(f'Os valores são: {valor}')
-    print(dicionario)
+        
+    for i in dicionario.keys():
+        print(f'As chaves são: {i}' )
+    for i in dicionario.keys():
+        print(f'Os valores são: {dicionario[i]}')
     
 criar_dicionario()

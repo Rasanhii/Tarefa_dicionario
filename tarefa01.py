@@ -4,7 +4,7 @@ dicionario = {}
 
 def m_chave():
     while True:
-        chave = input('Digite uma chave (digite "fim"): ')
+        chave = input('Digite uma chave (ou digite "fim"): ')
         if chave == '' or chave == 'fim':
             break
         valor = int(input('Digite um número para a chave: '))
